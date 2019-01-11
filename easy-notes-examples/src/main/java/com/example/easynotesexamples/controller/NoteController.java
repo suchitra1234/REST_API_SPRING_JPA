@@ -16,6 +16,8 @@ public class NoteController {
 	@Autowired
 	NoteRepository noteRepository;
 	
+	
+	
 	//Get  all Notes
 	@GetMapping ("/notes")
 	public List<Notes> getAllNotes(){
@@ -65,7 +67,7 @@ public class NoteController {
 	// EXTERNAL TOMCAT TEST METHOD
 	   @RequestMapping("/external-tomcat")
 	   public String printMessage() {
-	        return "Hey, I am from external tomcat";
+	        return "Hey, I am from external tomcat2";
 	   }
 	
 }
